@@ -1,47 +1,25 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link
-      href="https://fonts.googleapis.com/css?family=Chivo:900i|Muli|Titillium+Web"
-      rel="stylesheet"
-    />
+    <!-- Bootstrap is lazy! -->
     <link type="text/css" rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <title>Hi-Lo Guessing Game</title>
+    <link rel="icon" href="favicon.ico" />
+    <title>Guessing Game</title>
   </head>
-
   <body>
-    <div class="container w-25 p-3">
-      <div class="center">
-        <input
-          class="btnNewGame btn btn-outline-success"
-          type="button"
-          value="New Game"
-        />
-        <br />
-        <input
-          class="inputs-Values center"
-          placeholder=" Enter amount"
-          type="number"
-        />
-        <br />
-        <input
-          class="btnGuess btn btn-outline-success"
-          type="button"
-          value="Guess"
-        />
-        <br />
-        <output class="Tries-output"></output>
-        <br />
-        <output class="final-output">Guess a number between 1 and 100</output>
+    <div class="app-container-outer">
+      <div class="app-container-inner">
+        <h1>Guessing Game</h1>
+        <p>The number is between 1 and 100..</p>
+        <p>Try and Guess it! 🤔</p>
+        <input class="input-guess" placeholder="Enter amount" type="number" required />
+        <output class="output-error"></output>
+        <output class="output-info"></output>
+        <output class="output-tries"></output>
+        <input class="button-guess" type="button" value="Guess" />
+        <input class="button-new-game" type="button" value="New Game" />
       </div>
     </div>
   </body>
-
   <script src="script.js"></script>
 </html>

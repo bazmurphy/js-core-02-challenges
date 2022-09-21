@@ -1,23 +1,29 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link
-      href="https://fonts.googleapis.com/css?family=Chivo:900i|Muli|Titillium+Web"
-      rel="stylesheet"
-    />
     <link type="text/css" rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
     <title>Fastest Presser Game</title>
   </head>
-
   <body>
-    <div class="content"></div>
+    <div class="app-container">
+      <h1 id="game-title">Fastest Presser</h1>
+      <input id="game-length-input" placeholder="seconds" field="number" />
+      <button id="game-start-button">Start game!</button>
+      <span id="game-countdown-timer"></span>
+      <span id="game-result-message"></span>
+      <div id="game-player-split-screen">
+        <div id="game-player-one-screen">
+          <span id="game-player-one-title" class="game-player-one-screen">Player 1</span>
+          <span id="game-player-one-key">Tap "S"</span>
+          <span id="game-player-one-count">0</span>
+        </div>
+        <div id="game-player-two-screen" class="game-player-two-screen">
+          <span id="game-player-two-title">Player 2</span>
+          <span id="game-player-two-key">Tap "L"</span>
+          <span id="game-player-two-count">0</span>
+        </div>
+      </div>
+    </div>
   </body>
-
   <script src="script.js"></script>
 </html>

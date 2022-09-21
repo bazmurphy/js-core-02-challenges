@@ -1,0 +1,167 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css");
+
+@font-face {
+  font-family: "Chirp Regular";
+  src: url("chirp-regular-web.woff");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "Chirp Regular", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+  background-color: hsl(0, 0%, 15%);
+  color: hsl(0, 0%, 5%);
+  font-family: sans-serif;
+}
+
+#app-container {
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  border: 0.25rem solid hsl(213, 80%, 63%);
+  border-radius: 0.5rem;
+  background-color: hsl(0, 0%, 85%);
+  box-shadow: 0rem 0rem 1rem black;
+}
+
+.tweet-form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#tweet-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#tweet-form-textarea {
+  height: 6rem;
+  resize: none;
+  border: 0.1rem solid hsl(0, 0%, 60%);
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  font-family: "Chirp Regular";
+}
+
+#tweet-form-button {
+  color:hsl(0, 0%, 100%);
+  background-color:hsl(213, 80%, 63%);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-family: "Chirp Regular";
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#tweet-form-button:hover {
+  background-color:hsl(213, 62%, 57%);
+}
+
+#all-tweets-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.tweet-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1.5rem 0rem;
+  border-top: 0.1rem solid hsl(0, 0%, 60%);
+}
+
+.tweet-section-one {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tweet-section-one-one {
+  display: flex;
+  gap: 0.2rem;
+}
+
+.tweet-section-one-two {
+
+}
+
+.tweet-profile-photo {
+  max-width: 48px;
+  max-height: 48px;
+  border-radius: 100%;
+}
+
+.tweet-names-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.tweet-name-container {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.tweet-name {
+  font-weight: bold;
+}
+
+.tweet-verified {
+  max-width: 16px;
+  max-height: 16px;
+}
+
+.tweet-username {
+  font-size: 0.9rem;
+}
+
+.twitter-logo {
+  max-width: 32px;
+  max-height: 32px;
+}
+
+.tweet-section-two {
+  /* display: flex;
+  flex-wrap: wrap; */
+}
+
+.tweet-contents {
+  /* display: flex;
+  flex-wrap: wrap; */
+}
+
+.tweet-section-three {
+  display: flex;
+  gap: 0.15rem;
+  font-size: 0.8rem;
+  color: hsl(0, 0%, 45%);
+}
+
+.tweet-section-four {
+  display: flex;
+  justify-content: space-between;
+  color: hsl(0, 0%, 60%);
+  font-size: 0.9rem;
+}
+
+.tweet-delete-icon {
+  cursor: pointer;
+}
+
+.tweet-validation-true {
+  color: green;
+}
+
+.tweet-validation-false {
+  color: red;
+}

@@ -1,23 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
 body {
-  background-image: url(assets/leaves.jpeg);
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  background-color: hsl(0, 0%, 15%);
+  color:hsl(0, 0%, 5%);
+  font-family: "Chivo", sans-serif;
+  font-size: 1.1rem;
+  text-shadow: 0 0 0.1rem black;
 }
 
-.container {
-  background-color: white;
-  display: block;
-  border-style: solid;
-  border-color: green;
-  margin-top: 150px;
-  width: 50%;
+.app-container-outer {
+  padding: 5rem;
+  border: 0.4rem solid #d4478a;
+  border-radius: 0.5rem;
+  background-color: hsl(0, 0%, 75%);
+  background: url("background.jpg") no-repeat top center fixed;
+  box-shadow: 0rem 0rem 1rem black;
 }
 
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
+.app-container-inner {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border: 0.4rem solid hsl(207, 80%, 64%);
+  border-radius: 0.5rem;
+  background-color: hsla(0, 0%, 90%, 0.96);
+  box-shadow: 0rem 0rem 1rem black;
 }
 
-.btn {
-  margin-bottom: 20px;
+.heading-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+h1 {
+  font-family: "Fredoka One";
+  font-size: 2rem;
+  color: hsl(331, 62%, 55%);
+  text-shadow: 0 0 0.1rem black;
+}
+
+input {
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  background-color: hsl(0, 0%, 95%);
+  font-family: "Chivo", sans-serif;
+  font-size: 1.05rem;
+  text-shadow: 0 0 0.1rem black;
+}
+
+.input-guess {
+  border: 0.25rem solid hsl(58, 87%, 63%);
+}
+
+.input-guess:hover {
+  background-color: hsl(58, 87%, 83%);
+}
+
+.output-error {
+  color: red;
+}
+
+.output-info {
+  color: hsl(207, 80%, 50%);;
+}
+
+.button-guess {
+  border: 0.25rem solid hsl(19, 68%, 53%);
+}
+
+.button-guess:hover {
+  background-color: hsl(19, 68%, 73%);
+}
+
+.button-new-game {
+  border: 0.25rem solid hsl(135, 34%, 54%);
+}
+
+.button-new-game:hover {
+  background-color: hsl(135, 34%, 74%);
 }

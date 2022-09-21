@@ -1,3 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "Press Start 2P";
+}
+
 body {
-  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  background-color: hsl(0, 0%, 15%);
+  color:hsl(0, 0%, 5%);
+  font-family: sans-serif;
+  font-size: 1.1rem;
+  text-shadow: 0 0 0.1rem black;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border: 0.3rem solid hsl(0, 0%, 0%);
+  border-radius: 0.5rem;
+  background-color: hsl(60, 100%, 60%);
+  box-shadow: 0rem 0rem 0.5rem hsl(0, 0%, 0%);
+  background-image: url("background.png");
+}
+
+#game-title {
+  color: hsl(300, 100%, 65%);
+  font-size: 1.5rem;
+  text-shadow: 0 0 0.1rem black;
+}
+
+#game-length-input {
+  width: 120px;
+  padding: 0.5rem;
+  border: 0.2rem solid hsl(0, 0%, 60%);
+  border-radius: 0.5rem;
+  text-align: center;
+  box-shadow: 0rem 0rem 0.3rem black;
+}
+
+#game-start-button {
+  padding: 1rem 2rem;
+  background-color: hsl(120, 100%, 40%, 0.5);
+  border: 0.25rem solid green;
+  border-radius: 0.5rem;
+  box-shadow: 0rem 0rem 0.3rem black;
+  cursor: pointer;
+}
+
+#game-start-button:hover {
+  background-color: hsl(120, 100%, 50%, 0.5);
+}
+
+
+#game-countdown-timer {
+
+}
+
+#game-result-message {
+
+}
+
+#game-player-one-title {
+  font-weight: bold;
+}
+
+#game-player-two-title {
+  font-weight: bold;
+}
+
+#game-player-one-key {
+  color: hsl(180, 100%, 30%);
+}
+
+#game-player-two-key {
+  color: hsl(350, 100%, 68%);
+}
+
+#game-player-one-count {
+  font-size: 2rem;
+}
+
+#game-player-two-count {
+  font-size: 2rem;
+}
+
+#game-countdown-timer {
+  color: hsl(0, 100%, 50%);
+  font-size: 1.1rem;
+}
+
+#game-player-split-screen {
+  display: flex;
+  gap: 1rem;
+  /* padding: 1rem; */
+  /* border: 0.1rem solid hsl(0, 0%, 0%); */
+  /* border-radius: 0.5rem; */
+}
+
+#game-player-one-screen,
+#game-player-two-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  border: 0.1rem solid hsl(0, 0%, 0%);
+  border-radius: 0.5rem;
+  box-shadow: 0rem 0rem 0.3rem black;
+}
+
+#game-player-one-screen {
+  /* background-color: hsl(180, 100%, 40%); */
+  border: 0.25rem solid hsl(180, 100%, 30%);
+}
+
+#game-player-two-screen {
+  /* background-color: hsl(350, 100%, 78%); */
+  border: 0.25rem solid hsl(350, 100%, 68%);
+}
+
+.player-one-button-pressed {
+  background-color: hsl(180, 100%, 50%);
+}
+
+.player-two-button-pressed {
+  background-color: hsl(350, 100%, 78%);
+}
+
+#game-result-message {
+  color: blue;
+}
+
+.player-winner {
+  background-image: url(winner.png);
+  background-position: center;
+  background-position: cover;
 }
